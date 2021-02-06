@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- splidejs css -->
+    <link rel="stylesheet" href="path-to-the-file/splide.min.css">
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/3232e7f7ad.js" crossorigin="anonymous"></script>
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Kişisel Web Sitesi</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div id="header">
+        <!-- soical media -->
+        <div id="social-media">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="social-icon">
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-github"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <div class="email">
+                    <p>ferhatuzuntr@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <!-- menu -->
+        <div id="menu">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div id="logo" class="d-flex align-items-center">
+                    <div class="logo">
+                        <img src="img/logo.jpg" alt="" class="img-fluid profile-logo">
+                    </div>
+                    <div id="info" class="m-lg-4">
+                        <h4>Ferhat UZUN</h4>
+                        <h6>kişisel web sitesi</h6>
+                    </div>
+                </div>
+                <div id="menu-link">
+                    <ul class="d-flex">
+                        <li><a href="#header" class="menu-border">Ana Sayfa</a></li>
+                        <li><a href="#about-me">Hakkımda</a></li>
+                        <li><a href="#skill">Beceriler</a></li>
+                        <li><a href="#studies">Çalışmalarım</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- slider -->
+    <div id="image-slider" class="splide" data-splide='{"type":"loop","autoplay":"true","pauseOnHover":"false","pauseOnFocus":"false"}'>
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="img/slider-1.jpg" class="img-fluid">
+                </li>
+                <li class="splide__slide">
+                    <img src="img/slider-2.jpg" class="img-fluid">
+                </li>
+                <li class="splide__slide">
+                    <img src="img/slider-3.jpg" class="img-fluid">
+                </li>
+                <li class="splide__slide">
+                    <img src="img/slider-4.png" class="img-fluid">
+                </li>
+                <li class="splide__slide">
+                    <img src="img/slider-5.jpg" class="img-fluid">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <h4 class="section-title">Hakkımda</h4>
+            <div class="d-flex">
+                <div id="profile-img">
+                    <img src="img/logo.jpg" alt="" class="profile-img">
+                </div>
+                <div id="about-me">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sit consequuntur obcaecati
+                        architecto maxime ex eligendi quibusdam impedit libero placeat sunt, corporis, voluptate vitae
+                        itaque. Soluta incidunt expedita dolor eveniet iusto nostrum obcaecati reiciendis accusamus
+                        aliquam,
+                        possimus necessitatibus veniam rerum. Quidem aspernatur harum modi laboriosam quam doloribus
+                        voluptatibus incidunt id.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sit consequuntur obcaecati
+                        architecto maxime ex eligendi quibusdam impedit libero placeat sunt, corporis, voluptate vitae
+                        itaque. Soluta incidunt expedita dolor eveniet iusto nostrum obcaecati reiciendis accusamus
+                        aliquam,
+                        possimus necessitatibus veniam rerum. Quidem aspernatur harum modi laboriosam quam doloribus
+                        voluptatibus incidunt id.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- skill -->
+    <div id="skill">
+        <div class="container">
+            <h4 class="section-title">Beceriler</h4>
+            <div class="d-flex justify-content-center">
+
+                <div class="skill-box">
+                    <h5>Grafik Tasarım</h5>
+                    <p>Adobe Photoshop</p>
+                    <div class="skill-level-1" style="width: 0%;">
+                        <p class="skill-level-text">%80</p>
+                    </div>
+                    <p>Adobe After Effect</p>
+                    <div class="skill-level-2" style="width: 0%;">
+                        <p class="skill-level-text">%90</p>
+                    </div>
+                    <p>Adobe Premiere Pro</p>
+                    <div class="skill-level-3" style="width: 0%;">
+                        <p class="skill-level-text">%40</p>
+                    </div>
+                    <p>Adobe XD</p>
+                    <div class="skill-level-4" style="width: 0%;">
+                        <p class="skill-level-text">%60</p>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <h5>Programlama Dilleri</h5>
+                    <p>Javascript</p>
+                    <div class="skill-level-5" style="width: 0%;">
+                        <p class="skill-level-text">%70</p>
+                    </div>
+                    <p>php</p>
+                    <div class="skill-level-6" style="width: 0%;">
+                        <p class="skill-level-text">%40</p>
+                    </div>
+                    <p>C#</p>
+                    <div class="skill-level-7" style="width: 0%;">
+                        <p class="skill-level-text">%30</p>
+                    </div>
+                    <p>Java</p>
+                    <div class="skill-level-8" style="width: 0%;">
+                        <p class="skill-level-text">%60</p>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <h5>Kütüphaneler</h5>
+                    <p>Bootstrap</p>
+                    <div class="skill-level-9" style="width: 0%;">
+                        <p class="skill-level-text">%100</p>
+                    </div>
+                    <p>Jquery</p>
+                    <div class="skill-level-10" style="width: 0%;">
+                        <p class="skill-level-text">%70</p>
+                    </div>
+                    <p>Angular</p>
+                    <div class="skill-level-11" style="width: 0%;">
+                        <p class="skill-level-text">%50</p>
+                    </div>
+                    <p>React</p>
+                    <div class="skill-level-12" style="width: 0%;">
+                        <p class="skill-level-text">%60</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- studies -->
+    <div id="studies">
+        <div class="container">
+            <h4 class="section-title">Çalışmalarım</h4>
+            <div class="d-flex">
+                <div class="card" style="width: 25%;">
+                    <h4 class="card-header">Proje Başlığı</h4>
+                    <div class="card-img">
+                        <img src="img/p-1.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text mb-2">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Github'da incele</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 25%;">
+                    <h4 class="card-header">Proje Başlığı</h4>
+                    <div class="card-img">
+                        <img src="img/p-2.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text mb-2">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Github'da incele</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 25%;">
+                    <h4 class="card-header">Proje Başlığı</h4>
+                    <div class="card-img">
+                        <img src="img/p-3.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text mb-2">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Github'da incele</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 25%;">
+                    <h4 class="card-header">Proje Başlığı</h4>
+                    <div class="card-img">
+                        <img src="img/p-4.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text mb-2">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Github'da incele</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="card" style="width: 25%;">
+                    <h4 class="card-header">Proje Başlığı</h4>
+                    <div class="card-img">
+                        <img src="img/p-5.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text mb-2">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Github'da incele</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 25%;">
+                    <h4 class="card-header">Proje Başlığı</h4>
+                    <div class="card-img">
+                        <img src="img/p-6.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text mb-2">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Github'da incele</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 25%;">
+                    <h4 class="card-header">Proje Başlığı</h4>
+                    <div class="card-img">
+                        <img src="img/p-7.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text mb-2">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Github'da incele</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 25%;">
+                    <h4 class="card-header">Proje Başlığı</h4>
+                    <div class="card-img">
+                        <img src="img/p-8.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text mb-2">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Github'da incele</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- blog -->
+    <div id="blog">
+        <div class="container">
+            <h4 class="section-title">Blog Yazıları</h4>
+        </div>
+    </div>
+    <div id="blog-card">
+        <div class="container">
+            <div class="d-flex blog-card mx-auto justify-content-center">
+                <div class="card" style="width: 28%;">
+                    <div class="card-img">
+                        <img src="img/slider-1.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="read-counter" >
+                        <i class="fas fa-fire"><span>305 kişi okudu</span></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis animi
+                            officiis, dolores itaque deleniti deserunt doloribus velit, aperiam ipsam facere possimus
+                            esse voluptatibus commodi </p>
+                        <a href="#" class="btn btn-primary w-50">devamını oku</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 28%;">
+                    <div class="card-img">
+                        <img src="img/slider-3.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="read-counter" >
+                        <i class="fas fa-fire"><span>305 kişi okudu</span></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis animi
+                            officiis, dolores itaque deleniti deserunt doloribus velit, aperiam ipsam facere possimus
+                            esse voluptatibus commodi </p>
+                        <a href="#" class="btn btn-primary w-50">devamını oku</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 28%;">
+                    <div class="card-img">
+                        <img src="img/slider-5.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="read-counter" >
+                        <i class="fas fa-fire"><span>305 kişi okudu</span></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis animi
+                            officiis, dolores itaque deleniti deserunt doloribus velit, aperiam ipsam facere possimus
+                            esse voluptatibus commodi </p>
+                        <a href="#" class="btn btn-primary w-50">devamını oku</a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn mt-3 w-50 blog-button">Tüm Yazılar</button>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container contact-form">
+            <div class="contact-image">
+                
+            </div>
+            <form method="post">
+                <h3>Benimle İletişime Geç</h3>
+               <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="ad" class="form-control" placeholder="Adınız *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="eposta" class="form-control" placeholder="E-posta adresiniz *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="telefon" id="telefon" class="form-control" placeholder="Telefon numaranız (zorunlu değil)" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="mesaj" class="btnContact" value="Gönder" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="txtMsg" class="form-control" placeholder="Mesajınız *" style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+</div>
+    </div>
+
+    <!-- back to top-->
+    <div id="back-to-top">
+        <a href="#header"><img src="img/back-to-top.png" alt="" class="back-to-top"></a>
+    </div>
+
+
+    
+    
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- javascript -->
+    <script src="script.js"></script>
+    <!-- splidejs -->
+    <script src="path-to-the-file/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+</body>
+
+</html>
