@@ -10,7 +10,7 @@ $(document).ready(function(){
             $(".back-to-top").fadeOut()
         }
         //fix menu
-        if($(window).scrollTop()>180){
+        if($(window).scrollTop()>141){
             $("#menu").addClass("menu-fix")
             $("#menu").css("opacity","0.9")
             $(".logo").hide()
@@ -128,12 +128,12 @@ $(document).ready(function(){
             }else{
                 $( "a[href='#studies']" ).removeClass("menu-border")
             }
-            if($(window).scrollTop()>2500 && $(window).scrollTop()<=3134){
+            if($(window).scrollTop()>2500 && $(window).scrollTop()<=2805){
                 $( "a[href='#blog']" ).addClass("menu-border")
             }else{
                 $( "a[href='#blog']" ).removeClass("menu-border")
             }
-            if($(window).scrollTop()>3134 && $(window).scrollTop()<=3500){
+            if($(window).scrollTop()>2805 && $(window).scrollTop()<=3500){
                 $( "a[href='#contact']" ).addClass("menu-border")
             }else{
                 $( "a[href='#contact']" ).removeClass("menu-border")
@@ -218,7 +218,39 @@ $(document).ready(function(){
     $("#menu-link ul li").mouseleave(function(){
         $(this).children("a").removeClass("menu-border-2")
     })
+
+    //social media show icon
+    $(".show-icon").click(function(){
+        $(".bi-twitter").slideToggle()
+        $(".bi-instagram").slideToggle()
+        $(".bi-github").slideToggle()
+        $(".bi-linkedin").slideToggle()
+        $(".show-icon").toggleClass("show-icon-transform")
+    })
     
+    //blog text show
+    $(".studies-box").mouseenter(function(){
+        $(this).children(".studies-title").animate({
+            top:"+=80px"
+        })
+        $(this).children(".studies-content").animate({
+            bottom:"+=100px"
+        })
+        $(this).children(".studies-box-bg").css("filter","blur(2px)")
+        $(this).children("img").css("transition","400ms")
+        $(this).children(".studies-box-bg").css("background-position","bottom")
+    })
+    $(".studies-box").mouseleave(function(){
+        $(this).children(".studies-title").animate({
+            top:"-=80px"
+        })
+        $(this).children(".studies-content").animate({
+            bottom:"-=100px"
+        })
+        $(this).children(".studies-box-bg").css("filter","blur(0)")
+        $(this).children("img").css("transition","400ms")
+        $(this).children(".studies-box-bg").css("background-position","top")
+    })
    
 })
 
