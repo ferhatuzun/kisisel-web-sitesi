@@ -10,7 +10,7 @@ $(document).ready(function(){
             $(".back-to-top").fadeOut()
         }
         //fix menu
-        if($(window).scrollTop()>141){
+       /* if($(window).scrollTop()>141){
             $("#menu").addClass("menu-fix")
             $("#menu").css("opacity","0.9")
             $(".logo").hide()
@@ -22,7 +22,7 @@ $(document).ready(function(){
             $(".logo").show()
             $("#info h6").show()
             $("#info").addClass("m-lg-4")
-        }
+        }*/
         //skill loading
         if(screen.height<=1024){
             if($(window).scrollTop()>552){
@@ -173,34 +173,34 @@ $(document).ready(function(){
         }
 
         //load
-        if(screen.height<=1024){
-            if($(window).scrollTop()>456){
-                $("#skill .container").fadeIn(800)
-            }
-            if($(window).scrollTop()>850){
-                $("#studies .container").fadeIn(800)
-            }
-            if($(window).scrollTop()>1900){
-                $("#blog .container").fadeIn(800)
-            }
-            if($(window).scrollTop()>1900){
-                $("#blog-card .container").fadeIn(800)
-            }
-        }
-        if(screen.height>=1080){
-            if($(window).scrollTop()>400){
-                $("#skill .container").fadeIn(800)
-            }
-            if($(window).scrollTop()>800){
-                $("#studies .container").fadeIn(800)
-            }
-            if($(window).scrollTop()>1826){
-                $("#blog .container").fadeIn(800)
-            }
-            if($(window).scrollTop()>1826){
-                $("#blog-card .container").fadeIn(800)
-            }
-        }
+        // if(screen.height<=1024){
+        //     if($(window).scrollTop()>456){
+        //         $("#skill .container").fadeIn(800)
+        //     }
+        //     if($(window).scrollTop()>850){
+        //         $("#studies .container").fadeIn(800)
+        //     }
+        //     if($(window).scrollTop()>1900){
+        //         $("#blog .container").fadeIn(800)
+        //     }
+        //     if($(window).scrollTop()>1900){
+        //         $("#blog-card .container").fadeIn(800)
+        //     }
+        // }
+        // if(screen.height>=1080){
+        //     if($(window).scrollTop()>400){
+        //         $("#skill .container").fadeIn(800)
+        //     }
+        //     if($(window).scrollTop()>800){
+        //         $("#studies .container").fadeIn(800)
+        //     }
+        //     if($(window).scrollTop()>1826){
+        //         $("#blog .container").fadeIn(800)
+        //     }
+        //     if($(window).scrollTop()>1826){
+        //         $("#blog-card .container").fadeIn(800)
+        //     }
+        // }
     })
 
     //read counter
@@ -269,3 +269,28 @@ document.getElementById('telefon').addEventListener('input', function (e) {
         autoplay:"true",
     } );
 } );
+
+//dark mode
+$(".form-check-input").click(function(){
+    $(this).toggleClass("dark-mode")
+    var darkMode = $('.form-check-input').attr('class').split(/\s+/);
+    $.each(darkMode, function(index, item) {
+    if (item === 'dark-mode') {
+        $("body").css("background-color","#18191A")
+        $("#about .section-title").css("color","#fff")
+        $("#about-me p").css("color","#C4C6CB")
+        $("#studies .section-title").css("color","#fff")
+        $("#menu").css("background-color","#242526")
+        $("#skill,#blog,#contact").css("background","#242526")
+        $("#blog").css("color","#000 !important")
+    }else{
+        $("body").css("background-color","#fff")
+        $("#about .section-title").css("color","#000")
+        $("#about-me p").css("color","#000")
+        $("#studies .section-title").css("color","#000")
+        $("#menu").css("background-color","#008080")
+        $("#skill,#blog,#contact").css("background","linear-gradient(90deg, rgba(0,102,102,1) 0%, rgba(0,128,128,1) 26%, rgba(102,178,178,1) 73%, rgba(178,216,216,1) 100%)")
+        $("#blog").css("color","#000 !important")
+    }
+});
+})

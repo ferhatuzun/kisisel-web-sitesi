@@ -1,5 +1,12 @@
+body{
+    transition: background-color 500ms;
+}
 p{
     margin-bottom: 0;
+    transition: color 500ms;
+}
+h1,h2,h3,h4,h5,h6{
+    transition: color 500ms;
 }
 ul{
     list-style-type: none;
@@ -38,6 +45,7 @@ a:hover{
 #menu{
     background-color:#008080 ;
     padding: 10px;
+    transition: all 500ms;
 }
 .menu-fix{
     position: fixed;
@@ -100,9 +108,10 @@ a:hover{
     color: #fff;
     background: rgb(0,102,102);
     background: linear-gradient(90deg, rgba(0,102,102,1) 0%, rgba(0,128,128,1) 26%, rgba(102,178,178,1) 73%, rgba(178,216,216,1) 100%);
+    transition: all 500ms;
 }
 #skill .container{
-    display: none;
+    /* display: none; */
 }
 .skill-box{
     width: 30%;
@@ -212,6 +221,7 @@ a:hover{
     width: 33%;
     height: 250px;
     overflow: hidden;
+    padding: 0 10px;
 }
 .studies-box .img-fluid{
     width: 100%;
@@ -262,10 +272,10 @@ a:hover{
     background: linear-gradient(90deg, rgba(0,102,102,1) 0%, rgba(0,128,128,1) 26%, rgba(102,178,178,1) 73%, rgba(178,216,216,1) 100%);
 }
 #blog .container{
-    display: none;
+    /* display: none; */
 }
 #blog-card .container{
-    display: none;
+    /* display: none; */
 }
 #blog-card .card{
     margin-right: 30px;
@@ -328,10 +338,13 @@ a:hover{
 
 /* contact */
 #contact{
-    background-image: url(img/de.png);
+    /* background-image: url(img/de.png);
     background-position: center;
-    background-size: cover;
-    padding: 10px 0;
+    background-size: cover; */
+    background: rgb(0,102,102);
+    background: linear-gradient(90deg, rgba(0,102,102,1) 0%, rgba(0,128,128,1) 26%, rgba(102,178,178,1) 73%, rgba(178,216,216,1) 100%);
+    background-color: aqua;
+    padding: 0px 0;
 }
 .contact-form{
     margin-top: 10%;
